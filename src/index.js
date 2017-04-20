@@ -8,4 +8,4 @@ var exports = module.exports ={};
 
 exports.React = React;
 // exports.render = render;
-exports.App = App;
+// exports.App = App;
