@@ -1,6 +1,6 @@
 var path = require('path')
 
-module.exports = {
+/* module.exports = {
     entry: './src/index.js',
     output: {
         path:     path.resolve('build'),
@@ -12,4 +12,8 @@ module.exports = {
             loaders: ['babel-loader']
         }]
     }
-};
+}; */
+
+module.exports = function(env) {
+	return require(`./webpack.${env}.js`)
+}
