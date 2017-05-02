@@ -4,9 +4,9 @@ module.exports = {
 	devtool: 'cheap-module-source-map',
 	entry: './src/index.js',
 	output: {
-		path: path.join(__dirname, '/dist/assets'),
+		path: path.join(__dirname, 'dist'),
 		filename: '[name].bundle.js',
-		publicPath: "/assets", 
+		publicPath: "/assets/", 
 		sourceMapFilename: '[name].map'
 	},
 
@@ -20,9 +20,9 @@ module.exports = {
 	devServer: {
 		port: 7777,
 		host: 'localhost',
+		contentBase: path.join(__dirname, "build"),
 		historyApiFallback: true,
 		noInfo: false,
-		stats: 'minimal',
-		publicPath: '/assets/'
+		stats: 'minimal'
 	}
 }

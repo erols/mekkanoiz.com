@@ -7,7 +7,7 @@
     "compile": "babel --presets es2015 -d lib/ src/",
     "test": "npm run compile && mocha --compilers js:babel-core/register",
     "serve": "webpack-dev-server --content-base build --inline",
-		"build:dev": "webpack --env=dev --progress --profile --colors"
+		"build:dev": "webpack-dev-server --env=dev --progress --profile --colors"
   },
   "author": "",
   "license": "ISC",
